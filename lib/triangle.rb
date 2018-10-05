@@ -11,7 +11,7 @@ class Triangle
   
   
   def kind
-    
+    if @length == @width && @width == @height
   end
 
 
