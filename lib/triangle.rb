@@ -14,13 +14,11 @@ class Triangle
       return :equilateral
     elsif @length == @width || @length == @height || @width == @height
       return :isosceles
+    elsif @length != @width && @width != @height && @length != @height
+      return :scalene
     end
     
   end
-
-
-
-
 
 
 
