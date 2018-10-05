@@ -12,7 +12,10 @@ class Triangle
   def kind
     if @length == @width && @width == @height
       return :equilateral
+    elsif @length == @width || @length == @height || @width == @height
+      return :isosceles
     end
+    
   end
 
 
