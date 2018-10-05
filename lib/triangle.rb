@@ -1,7 +1,6 @@
 class Triangle
   
   attr_accessor :length, :width, :height
-  attr_reader :equilateral
   
   def initialize(length, width, height)
     @length= length
@@ -12,6 +11,8 @@ class Triangle
   
   def kind
     if @length == @width && @width == @height
+      return :equilateral
+    end
   end
 
 
